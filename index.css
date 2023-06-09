@@ -2,7 +2,10 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
+    height: 100%;
+    background: linear-gradient(#E4EfE9, #93A5CF);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #432000;
     user-select: none;
 }
