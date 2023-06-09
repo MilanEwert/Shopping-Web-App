@@ -21,6 +21,13 @@ addButtonEl.addEventListener("click", function() {
     clearInputFieldEl()
 })
 
+// Execute the item adding when the user presses enter on the keyboard
+inputFieldEl.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        addButtonEl.click()
+    }
+})
+
 onValue(shoppingListInDB, function(snapshot) {
     if (snapshot.exists()) {
         let itemsArray = Object.entries(snapshot.val())
